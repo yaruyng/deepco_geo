@@ -1,201 +1,78 @@
 ---
 layout:     post
-title:      "Authoring mathematical formulae"
-description: "Cleanwhite theme now has built-in support for authoring mathematical or chemical equations"
-excerpt: "The theme uses Hugo's embedded instance of the KaTeX display engine to render mathematical markup to HTML at build time."
-date:    2025-07-06
-author: "Andreas Deininger"
-image: "/img/2018-05-23-service_2_service_auth/background.jpg"
-publishDate: 2025-07-06
+title:      "GEO科普：一文读懂生成式引擎优化，AI时代的内容与流量新逻辑"
+description: ""
+excerpt: ""
+date:    2026-03-20
+author: "Ruby"
+image: "/img/deepcogeo1.png"
+publishDate: 2026-03-27
 tags:
-    - Math
-    - KaTeX 
+    - 科普
 URL: "/2025/07/06/mathematical-formulae/"
-categories: [ tips ]    
+categories: [ 科普 ]    
 ---
 
-## Authoring mathematical and chemical equations
+在AI大模型普及、内容生产进入“生成式”时代的今天，GEO（Generative Engine Optimization，生成式引擎优化）逐渐走进大众视野。它不是315曝光的“黑产工具”，而是一门依托AI技术、规范运用可创造正向价值的优化技术，是AI时代内容传播、品牌推广的核心逻辑之一。今天，我们用通俗的语言，拆解GEO的核心知识点，帮你分清合规与滥用的边界，读懂它的真正价值。
 
+## 一、什么是GEO？核心定义与本质
 
-Cleanwhite theme now has built-in \(\KaTeX\) support, so that you can easily include
-complex mathematical formulae into your web page, either inline or centred
-on its own line. The theme uses Hugo's embedded instance of the KaTeX 
-display engine to render mathematical markup to HTML at build time.
-With this server side rendering of formulae, the same output is produced,
-regardless of your browser or your environment.  
+GEO，全称Generative Engine Optimization，即**生成式引擎优化**，是适配生成式AI（如ChatGPT、文心一言等）与新一代搜索引擎，通过优化内容质量、适配AI检索逻辑，让优质内容更易被AI抓取、采信，进而在AI回答、搜索结果中获得优先展示的技术。
 
-[\(\LaTeX\)](https://www.latex-project.org/) is a high-quality typesetting
-system for the production of technical and scientific documentation. Due to its
-excellent math typesetting capabilities, \(\TeX\) became the de facto standard
-for the communication and publication of scientific documents, especially if
-these documents contain a lot of mathematical formulae. Designed and mostly
-written by Donald Knuth, the initial version was released in 1978. Dating back
-that far, \(\LaTeX\) has `pdf` as its primary output target and is not
-particularly well suited for producing HTML output for the Web. Fortunately,
-with [\(\KaTeX\)](https://katex.org/) there exists a fast and easy-to-use
-JavaScript library for \(\TeX\) math rendering on the web, which is embedded
-into Hugo as of Hugo version v0.132.0.
+简单来说，GEO的核心本质是“**与AI对话**”：传统SEO是优化内容适配“搜索引擎算法”，让内容在百度、谷歌等平台排名靠前；而GEO是优化内容适配“AI生成逻辑”，让AI在整合信息、生成回答时，优先选择、推荐你的内容，本质是“让AI读懂优质内容，让优质内容触达更多人”。
 
-As already mentioned above, mathematical or chemical equations can be shown either inline or in display mode:
+这里必须明确：GEO本身是合规、正向的技术，315曝光的是“GEO滥用”——不法分子通过批量制造虚假内容、污染AI信息源，操控AI输出虚假推荐，这并非GEO的本意，而是黑产对技术的扭曲使用。
 
-### Inline formulae
+## 二、GEO的核心原理：AI如何“识别”并优先推荐内容？
 
-The following code sample produces a text line with three inline formulae:
+GEO的运作逻辑，本质是“贴合AI的信息抓取与判断规则”，核心围绕3个关键点，无需复杂技术，就能理解其底层逻辑：
 
-```tex
-When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c= 0\) and they are \(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\).
-```
+### 1. 内容适配：让AI“读得懂、用得上”
 
-When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c= 0\) and they are
-\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\).
+生成式AI抓取内容时，更偏好“结构清晰、逻辑连贯、信息准确”的内容。GEO的核心优化方向之一，就是让内容符合AI的读取习惯——比如明确核心关键词、搭建清晰的内容框架、补充权威佐证（如数据、官方信息），避免模糊、碎片化、虚假的表述，让AI能快速提取内容核心价值，将其纳入“可信信息库”。
 
-### Formulae in display mode
+### 2. 可信度背书：让AI“愿意推荐”
 
-The following code sample produces an introductory text line followed by a
-formula numbered as `(1)` residing on its own line:
+AI在生成回答时，会优先采信“权威、可信”的信息源。GEO通过优化内容的可信度的，让AI认定其为优质内容——比如标注正规来源、补充专业解读、结合行业规范，避免无依据的夸张表述，让内容具备可验证性，进而成为AI推荐的“优先选项”。
 
-````markdown
-The probability of getting \(k\) heads when flipping \(n\) coins is:
-\[
-\tag*{(1)} P(E) = {n \choose k} p^k (1-p)^{n-k}
-\]
-````
+### 3. 场景适配：让内容“精准匹配需求”
 
-As an alternative to the standard syntax used above, formulae can also be
-authored using a [GLFM math block](https://docs.gitlab.com/ee/user/markdown.html#math):
+GEO会结合用户的实际咨询场景，优化内容的关键词与表述方式。比如用户常问“如何选择优质护肤品”，GEO会优化相关内容，精准匹配这一需求，让AI在接到该咨询时，能快速调用优化后的优质内容，给出更贴合用户需求的回答，实现“内容精准触达”。
 
-````markdown
-The probability of getting \(k\) heads when flipping \(n\) coins is:
+## 三、GEO的合规应用场景：不止于营销，更有广泛价值
 
-```math
-\tag*{(1)} P(E) = {n \choose k} p^k (1-p)^{n-k}
-```
-````
+合规使用GEO，能为个人、企业、行业带来多重价值，广泛应用于多个领域，而非局限于商业营销，核心场景有3类：
 
-Both standard syntax and `math` block render to the same formula:
+### 1. 品牌正向传播：让优质品牌被更多人看见
 
-The probability of getting \(k\) heads when flipping \(n\) coins is:
+对企业而言，GEO可用于优化品牌真实信息——比如整理品牌官网内容、产品真实参数、用户真实评价，让AI在回答相关问题时，优先推荐这些真实、优质的信息，避免被虚假信息挤压，帮助品牌建立正向口碑，实现合规的品牌推广。
 
-```math
-\tag*{(1)}  P(E) = {n \choose k} p^k (1-p)^{n-k}
-```
+### 2. 知识科普与信息传播：让优质内容触达更多人
 
-This [wiki page](https://en.wikibooks.org/wiki/LaTeX/Mathematics) provides in-depth
-information about typesetting mathematical formulae using the \(\LaTeX\)
-typesetting system.
+对科普创作者、机构而言，GEO可优化科普内容的结构与表述，让AI更易抓取、传播。比如优化医学科普、科学知识类内容，让AI在接到相关咨询时，优先推荐权威、易懂的科普内容，帮助大众获取准确信息，减少虚假知识的传播。
 
-### Activating KaTeX support
+### 3. 行业规范与信息整理：提升行业信息质量
 
-#### Enable `passthrough` extension
+在教育、医疗、金融等专业领域，GEO可用于优化行业规范、专业知识内容，让AI在生成相关回答时，优先采信权威标准、专业解读，帮助规范行业信息传播，降低用户获取优质信息的成本，推动行业良性发展。
 
-All you have to do is to enable and configure the goldmark `passthrough` extension
-inside your `hugo.toml`/`hugo.yaml`/`hugo.json`. You may want to edit the definition of the delimiters to
-meet your own needs. For details, see the official
-[Hugo docs](https://gohugo.io/content-management/mathematics/#step-1).
+## 四、GEO的合规边界：分清“优化”与“滥用”，避开坑点
 
-```toml
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      [markup.goldmark.extensions.passthrough]
-        enable = true
-        [markup.goldmark.extensions.passthrough.delimiters]
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)']]
-```
+结合315曝光的案例，我们必须明确GEO的合规边界，避免陷入“技术滥用”的误区，核心区分点如下：
 
-Internally, cleanwhite theme creates and uses Hugo's `render-passthrough`
-[hook](https://gohugo.io/render-hooks/passthrough/) when generating math
-equations at build-time. This hook is part of the theme, no need for any user action.
+### 1. 合规GEO：基于真实内容，优化展示逻辑
 
-#### Media types for download of KaTeX fonts
+核心原则是“内容真实、目的正向”——优化的是真实存在的内容，目的是让优质内容被更多人看见，不虚构信息、不误导用户，不污染AI信息源，符合行业规范与法律法规。
 
-Just for your information, no need for any action from you as user:
-KaTeX brings its own font files for rendering mathematical formulae.
-In order to enable the download of these font files locally during build time, two
-additional [media types](https://gohugo.io/configuration/media-types/#create-a-media-type)
-had to be created by adding the lines below to the `hugo.toml` configuration file of the cleanwhite theme:
+### 2. 滥用GEO：虚构内容，污染AI信息源
 
-```toml
-mediaTypes:
-  font/woff:
-    suffixes:
-    - woff
-  font/woff2:
-    suffixes:
-    - woff2
-```
+这就是315曝光的黑产操作：凭空虚构产品、编造虚假信息，批量制造虚假软文、测评，通过GEO技术让AI抓取这些虚假内容，进而操控AI输出虚假推荐，误导消费者、扰乱市场秩序，属于违法行为。
 
+### 3. 普通人必知的避坑点
 
-With the `passthrough` extension enabled and the media types defined, support
-of \(\KaTeX\) is automatically enabled when you author a `math` code block on
-your page or when you add a mathematical formula to your page using one of the
-passthrough delimiter pairs defined above.
+在接触AI推荐的内容时，可通过2点快速判断是否为“GEO滥用”：一是看内容是否有真实依据（如权威来源、具体参数），二是看表述是否夸张绝对（如“唯一有效”“宇宙第一”），避免被虚假信息误导。
 
-### Display of Chemical Equations and Physical Units
+## 五、总结：GEO的核心价值，是让优质内容被AI看见
 
-[mhchem](https://www.ctan.org/pkg/mhchem) is a \(\LaTeX\) package for
-typesetting chemical molecular formulae and equations. Fortunately, \(\KaTeX\)
-provides the `mhchem`
-[extension](https://github.com/KaTeX/KaTeX/tree/main/contrib/mhchem) that makes
-the `mhchem` package accessible when authoring content for the web. As of hugo
-version v0.144.0, the `mhchem` extension is enabled in Hugo's embedded KaTeX
-instance by default, therefore you can easily include chemical equations into
-your page. An equation can be shown either inline or can reside on its own line.
-The following code sample produces a text line including an inline chemical
-equation:
+GEO不是“AI投毒工具”，而是AI时代适配内容传播的新型优化技术。它的核心价值，是搭建“优质内容与AI”的桥梁，让真实、有价值的内容更易被AI抓取、推荐，让用户更快获取优质信息，让品牌、创作者实现正向传播。
 
-```mhchem
-*Precipitation of barium sulfate:* \(\ce{SO4^2- + Ba^2+ -> BaSO4 v}\)
-```
-
-_Precipitation of barium sulfate:_ \(\ce{SO4^2- + Ba^2+ -> BaSO4 v}\)
-
-More complex equations can be displayed on their own line using the block
-delimiters defined:
-
-<!-- prettier-ignore-start -->
-````markdown
-\[
-\tag*{(2)} \ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
-\]
-````
-<!-- prettier-ignore-end -->
-
-Alternatively, you can use a code block adorned with `chem` in order to render
-the equation:
-
-````markdown
-```chem
-\tag*{(2)} \ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
-```
-````
-
-Both standard syntax and `chem` block renders to the same equation:
-
-<!-- prettier-ignore-start -->
-\[
-\tag*{(2)} \ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
-\]
-<!-- prettier-ignore-end -->
-
-The [manual](https://mhchem.github.io/MathJax-mhchem/) for mchem’s input syntax
-provides in-depth information about typesetting chemical formulae and physical
-units using the `mhchem` tool.
-
-Use of `mhchem` is not limited to the authoring of chemical equations. By using
-the included `\pu` command, pretty looking physical units can be written with
-ease, too. The following code sample produces two text lines with four numbers
-plus their corresponding physical units:
-
-```mhchem
-* Scientific number notation: \(\pu{1.2e3 kJ}\) or \(\pu{1.2E3 kJ}\) \\
-* Divisions: \(\pu{123 kJ/mol}\) or \(\pu{123 kJ//mol}\)
-```
-
-- Scientific number notation: \(\pu{1.2e3 kJ}\) or \(\pu{1.2E3 kJ}\)
-- Divisions: \(\pu{123 kJ/mol}\) or \(\pu{123 kJ//mol}\)
-
-For a complete list of options when authoring physical units, have a look at the
-[section](https://mhchem.github.io/MathJax-mhchem/#pu) on physical units in the
-`mhchem` documentation.
+随着AI技术的不断发展，GEO的应用会越来越广泛，而“合规使用、坚守底线”，既是对技术的尊重，也是对用户、对行业的负责。读懂GEO，分清合规与滥用的边界，才能真正发挥其价值，让AI技术与优质内容相辅相成，服务于大众。
