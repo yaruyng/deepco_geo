@@ -1,0 +1,9 @@
+/* 在 head 中于 Font Awesome 之后加载（见 hugo.toml custom_css），保证覆盖图标字号 */
+.navbar-custom .nav.navbar-nav > li > a > i.fa,
+.navbar-custom .nav.navbar-nav > li > a > i.fas,
+.navbar-custom #theme-toggle i.fa,
+.navbar-custom #theme-toggle i.fas {
+    font-size: 1.75rem !important;
+    line-height: 1 !important;
+    vertical-align: -0.08em !important;
+}
